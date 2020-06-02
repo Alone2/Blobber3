@@ -1,0 +1,14 @@
+.content {
+    overflow: auto;
+    padding: 16px;
+    /* border-radius: 3px; */
+    border-width: 1px;
+    background-color: var(--secondary-background);
+    border-style: none none solid none;
+    color: var(--primary-color);
+    border-color: var(--primary-contrast);
+}
+
+.content:hover {
+    background-color: var(--secondary-background);
+}

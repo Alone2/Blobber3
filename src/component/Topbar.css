@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap');
+
+/* @import url('https://fonts.googleapis.com/css2?family=Baumans&display=swap'); */
+
+.banner {
+    border-width: 3px;
+    border-style: none none solid none;
+    overflow: hidden;
+    border-color: var(--primary-contrast);
+    background-color: var(--secondary-background);
+}
+
+.banner a {
+    float: left;
+    text-align: center;
+    padding: 14px 16px 14px 5px;
+    text-decoration: none;
+    font-size: 30px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: pointer;
+    color: var(--primary-color);
+    font-family: 'Baumans';
+    font-family: 'Raleway';
+}
+
+.banner span {
+    float: left;
+    text-align: center;
+    padding: 14px 0px 0px 16px;
+    text-decoration: none;
+    font-size: 30px;
+    cursor: pointer;
+    color: var(--primary-color);
+    font-family: 'Baumans';
+}
+
+.banner .banner-logo {
+    padding: 6px 0px 0px 7px;
+    float: left;
+    width: 50px;
+}
+
+button {
+    padding: 7px 32px;
+    border: 2px;
+    /* border-style: none none solid none; */
+    border-style: solid;
+    /* border-radius: 1px; */
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.loginbutton {
+    margin: 13px 15px;
+    background-color: var(--transparent);
+    float: right;
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+}
+
+.loginbutton:hover {
+    animation-name: buttonhoverani;
+    animation-duration: 0.3s;
+    border-style: solid;
+    border-color: var(--primary-color);
+    background-color: var(--primary-color);
+    color: black;
+}
+
+@keyframes buttonhoverani {
+    from {
+        background-color: var(--transparent);
+        color: var(--primary-color);
+    }
+    to {
+        background-color: var(--primary-color);
+        color: black;
+    }
+}
