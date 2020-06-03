@@ -1,0 +1,33 @@
+.logincontentbutton {
+    border-style: none none solid none;
+    border-color: var(--secondary-color);
+    background-color: var(--primary-color);
+    color: var(--secondary-background);
+    border-width: 1px;
+    /* animation-name: buttoncontenthoverani;
+    animation-duration: 0.1s; */
+}
+
+.logincontentbutton:hover {
+    animation-name: buttoncontenthoverani;
+    animation-duration: 0.1s;
+    border-style: none none solid none;
+    border-color: var(--secondary-color);
+    background-color: var(--primary-color);
+    color: var(--secondary-background);
+    box-shadow: inset 0px 0px 0px 3px var(--secondary-background);
+    border-width: 0px;
+    margin-bottom: 1px;
+    border-radius: 0px;
+}
+
+@keyframes buttoncontenthoverani {
+    from {
+        box-shadow: inset 0px 0px 0px 0px;
+    }
+    to {
+        box-shadow: inset 0px 0px 0px 2px var(--secondary-background);
+        margin-bottom: 1px;
+        border-width: 0px;
+    }
+}

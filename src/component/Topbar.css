@@ -3,10 +3,10 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Baumans&display=swap'); */
 
 .banner {
-    border-width: 3px;
+    border-width: 1px;
     border-style: none none solid none;
     overflow: hidden;
-    border-color: var(--primary-contrast);
+    border-color: var(--primary-background);
     background-color: var(--secondary-background);
 }
 
@@ -43,16 +43,6 @@
     width: 50px;
 }
 
-button {
-    padding: 7px 32px;
-    border: 2px;
-    /* border-style: none none solid none; */
-    border-style: solid;
-    /* border-radius: 1px; */
-    border-radius: 2px;
-    cursor: pointer;
-}
-
 .loginbutton {
     margin: 13px 15px;
     background-color: var(--transparent);
@@ -67,7 +57,7 @@ button {
     border-style: solid;
     border-color: var(--primary-color);
     background-color: var(--primary-color);
-    color: black;
+    color: var(--secondary-background);
 }
 
 @keyframes buttonhoverani {
@@ -77,6 +67,6 @@ button {
     }
     to {
         background-color: var(--primary-color);
-        color: black;
+        color: var(--secondary-background);
     }
 }

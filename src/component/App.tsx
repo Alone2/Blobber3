@@ -3,9 +3,9 @@ import Login from './Login'
 import Topbar from './Topbar'
 import Cookies from 'js-cookie';
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import ContentHolder from './ContentHolder';
+import Content from './Content';
 
-import './colors.css'
+import './App/global.css'
 
 function App() {
   var themeany : any = Cookies.get('theme')
@@ -17,9 +17,9 @@ function App() {
     theme = themeany
   }
   if (theme === "white") {
-    require("colors.css")
+    require("./App/lighttheme.css")
   } else {
-    require("colors.css")
+    require("./App/darktheme.css")
   }
   return (
     <div className="App">
@@ -28,7 +28,9 @@ function App() {
             <Switch>
                 <Route path="/login" component={Login} />
             </Switch>
-            <ContentHolder />
+            <Content>
+              <Login />
+            </Content>
         </Router>
     </div>
   );

@@ -1,4 +1,5 @@
 import React from 'react';
+import './Login.css'
 
 function Login() {
     return (
@@ -7,10 +8,12 @@ function Login() {
                 <input type="text"
                     placeholder="username" />
                 <br />
+                <br />
                 <input type="password"
                     placeholder="password" />
                 <br />
-                <input type="submit" value="login" />
+                <br />
+                <button className="logincontentbutton" type="submit" value="login" >login</button>
             </form>
         </div>
     );

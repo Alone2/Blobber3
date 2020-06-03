@@ -1,7 +1,9 @@
 :root {
     --primary-color: rgba(240, 243, 245, 1);
+    --secondary-color: rgba(210, 213, 215, 1);
     --primary-background: black;
     --secondary-background: rgb(31, 31, 31);
     --primary-contrast: rgb(65, 65, 65);
+    --secondary-contrast: rgb(20, 20, 20);
     --transparent: rgba(240, 243, 245, 0);
 }

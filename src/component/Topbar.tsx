@@ -1,15 +1,14 @@
 import React from 'react';
 import './Topbar.css';
-import logo from './logo.svg'
+import logo from '../assets/logo.svg'
 
 function Topbar() {
   return (
     <div className="banner">
-        <img src={logo} className="banner-logo" />
-        <a>
+        <img alt="blobber logo" draggable="false" src={logo} className="banner-logo" />
+        <a href="./">
             blobber.
         </a>
-        {/* <img src={logo} className="login-logo" /> */}
         <button className="loginbutton">login</button>
     </div>
   );

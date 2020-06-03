@@ -1,0 +1,9 @@
+:root {
+    --primary-color: rgba(10, 10, 10, 1);
+    --secondary-color: rgba(60, 60, 60, 1);
+    --primary-background: white;
+    --secondary-background: rgb(243, 243, 243);
+    --primary-contrast: rgb(206, 206, 206);
+    --secondary-contrast: rgb(221, 221, 221);
+    --transparent: rgba(240, 243, 245, 0);
+}
