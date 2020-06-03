@@ -8,11 +8,13 @@ button {
 }
 
 input[type=text],
+input[type=email],
 input[type=password] {
     font-family: 'Open Sans', sans-serif;
     font-size: 20px;
+    width: 260px;
     outline: none;
-    overflow: auto;
+    /* overflow: auto; */
     resize: none;
     padding: 0px;
     -webkit-appearance: none;

@@ -1,5 +1,5 @@
 import React from 'react';
-import './Content.css'
+import styles from './Content.module.css'
 
 interface Props {
   children: React.ReactNode;
@@ -7,7 +7,7 @@ interface Props {
 
 function Content(props: Props) {  
   return (
-      <div className="content">
+      <div className={styles.content}>
         {props.children}
       </div>
     );

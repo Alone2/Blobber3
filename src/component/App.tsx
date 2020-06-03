@@ -1,9 +1,8 @@
 import React from 'react';
-import Login from './Login'
 import Topbar from './Topbar'
 import Cookies from 'js-cookie';
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import Content from './Content';
+import LoginScreen from './LoginScreen';
 
 import './App/global.css'
 
@@ -24,13 +23,11 @@ function App() {
   return (
     <div className="App">
         <Router>
-            <Route path="/" component={Topbar} />
             <Switch>
-                <Route path="/login" component={Login} />
+                <Route path="/login" exact component={LoginScreen} />
+                <Route path="/register" exact component={LoginScreen} />
+                <Route path="/" component={Topbar} />
             </Switch>
-            <Content>
-              <Login />
-            </Content>
         </Router>
     </div>
   );

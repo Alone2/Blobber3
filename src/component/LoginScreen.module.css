@@ -1,0 +1,23 @@
+.screen {
+    margin: 20% auto 0 auto;
+    width: 310px;
+    border-style: solid;
+    border-radius: 1px;
+    border-width: 1px;
+    border-color: var(--secondary-contrast)
+}
+
+.banner {
+    padding: 5px 10px 5px 5px;
+    background-color: var(--secondary-background);
+    border-style: none none solid none;
+    border-width: 1px;
+    border-color: var(--secondary-contrast);
+    height: 40px;
+}
+
+.bannerlogo {
+    display: block;
+    margin: 0 auto;
+    width: 40px;
+}

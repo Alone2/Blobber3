@@ -1,0 +1,61 @@
+.loginbutton {
+    float: right;
+    border-style: none none solid none;
+    border-color: var(--secondary-color);
+    background-color: var(--primary-color);
+    color: var(--secondary-background);
+    border-width: 1px;
+}
+
+.registerbutton {
+    color: var(--primary-color);
+    background-color: var(--transparent);
+    border-width: 0px;
+}
+
+.registerbutton:hover {
+    animation-name: buttoncontenthoverani2;
+    animation-duration: 0.5s;
+    background-color: var(--primary-color);
+    color: var(--primary-background);
+    box-shadow: inset 0px 0px 0px 3px var(--secondary-background);
+    border-radius: 0px;
+}
+
+.loginbutton:hover {
+    animation-name: buttoncontenthoverani;
+    animation-duration: 0.1s;
+    box-shadow: inset 0px 0px 0px 3px var(--secondary-background);
+    /* border-width: 0px; */
+    border-color: var(--secondary-background);
+    /* margin-bottom: 1px; */
+    border-radius: 0px;
+}
+
+.login {
+    margin: 0 auto;
+}
+
+@keyframes buttoncontenthoverani {
+    from {
+        box-shadow: inset 0px 0px 0px 0px;
+    }
+    to {
+        box-shadow: inset 0px 0px 0px 3px var(--secondary-background);
+        /* margin-bottom: 1px; */
+        border-width: 0px;
+    }
+}
+
+@keyframes buttoncontenthoverani2 {
+    from {
+        background-color: var(--transparent);
+        box-shadow: inset 0px 0px 0px 20px var(--secondary-background);
+        color: var(--primary-color);
+    }
+    to {
+        background-color: var(--primary-color);
+        color: var(--primary-background);
+        box-shadow: inset 0px 0px 0px 3px var(--secondary-background);
+    }
+}

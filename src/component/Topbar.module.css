@@ -10,7 +10,7 @@
     background-color: var(--secondary-background);
 }
 
-.banner a {
+.font {
     float: left;
     text-align: center;
     padding: 14px 16px 14px 5px;
@@ -26,27 +26,21 @@
     font-family: 'Raleway';
 }
 
-.banner span {
-    float: left;
-    text-align: center;
-    padding: 14px 0px 0px 16px;
-    text-decoration: none;
-    font-size: 30px;
-    cursor: pointer;
-    color: var(--primary-color);
-    font-family: 'Baumans';
-}
-
-.banner .banner-logo {
+.bannerlogo {
     padding: 6px 0px 0px 7px;
     float: left;
     width: 50px;
 }
 
+.linkclass {
+    float: right;
+    margin: 0px;
+    padding: 0px;
+}
+
 .loginbutton {
     margin: 13px 15px;
     background-color: var(--transparent);
-    float: right;
     border-color: var(--primary-color);
     color: var(--primary-color);
 }
