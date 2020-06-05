@@ -29,9 +29,11 @@ input[type=password] {
 
 body {
     background-color: var(--primary-background);
+    height: 100%;
 }
 
 :root {
     --very-dark: black;
     --very-bright: white;
+    height: 100%;
 }

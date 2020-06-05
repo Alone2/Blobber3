@@ -1,0 +1,11 @@
+.screen {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.navbar {
+    float: left;
+    width: 20%;
+    max-width: 300px;
+    margin: 0 auto;
+}

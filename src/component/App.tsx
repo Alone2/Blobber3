@@ -1,8 +1,10 @@
 import React from 'react';
 import Topbar from './Topbar'
+import News from './News'
 import Cookies from 'js-cookie';
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import LoginScreen from './LoginScreen';
+import ContentScreen from './ContentScreen';
 
 import './App/global.css'
 
@@ -28,6 +30,9 @@ function App() {
                 <Route path="/register" exact component={LoginScreen} />
                 <Route path="/" component={Topbar} />
             </Switch>
+            <ContentScreen>
+              <News />
+            </ContentScreen>
         </Router>
     </div>
   );

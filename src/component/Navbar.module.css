@@ -1,0 +1,10 @@
+.content {
+    padding: 16px;
+    /* height: 100px; */
+    border-width: 1px;
+    background-color: var(--secondary-contrast);
+    border-style: none solid none none;
+    color: var(--primary-color);
+    border-color: var(--secondary-background);
+    /* display: table-cell; */
+}
