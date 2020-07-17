@@ -1,6 +1,9 @@
 .content {
     padding: 16px;
-    /* height: 100px; */
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+    /* top: 0; */
     border-width: 1px;
     background-color: var(--secondary-contrast);
     border-style: none solid none none;

@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from './Login.module.css'
 import Content from './Content';
+import { Link } from "react-router-dom";
 
 function Register() {
     return (
@@ -23,6 +24,9 @@ function Register() {
                         placeholder="confirm password" />
                     <br />
                     <br />
+                    <Link className={styles.linkclass} to="/login">
+                        <button className={styles.registerbutton} value="register" >login</button>
+                    </Link>
                     <button className={styles.loginbutton} type="submit" value="login" >register</button>
                 </form>
             </div>

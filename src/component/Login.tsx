@@ -17,7 +17,7 @@ function Login() {
                     <br />
                     <br />
                     <Link className={styles.linkclass} to="/register">
-                        <button className={styles.registerbutton} value="register" >register</button>
+                    <button className={styles.registerbutton} value="register" >register</button>
                     </Link>
                     <button className={styles.loginbutton} type="submit" value="login" >login</button>
                 </form>

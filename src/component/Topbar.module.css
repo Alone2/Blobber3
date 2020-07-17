@@ -3,6 +3,8 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Baumans&display=swap'); */
 
 .banner {
+    z-index: 2;
+    position:relative;
     border-width: 1px;
     border-style: none none solid none;
     overflow: hidden;
