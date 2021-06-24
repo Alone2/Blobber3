@@ -16,7 +16,9 @@ function ContentScreen(props : Props) {
       <div className={styles.navbar}>
         <Navbar/>
       </div>
-      {props.children}
+      <div className={styles.children}>
+          {props.children}
+      </div>
     </div>
   );
 }
