@@ -23,7 +23,7 @@ interface Props {
 interface Article {
     header: string,
     message: string,
-    date: string
+    date: string,
     pic: string,
 }
 interface State {
@@ -68,8 +68,8 @@ export class News extends Component<Props, State> {
                 <br/>
                 <img src={k.pic} alt="" />
                 <br/>
-                <h2><ReactMarkdown source={k.header} /></h2>
-                <ReactMarkdown source={k.message} />
+                <h2><ReactMarkdown>{k.header}</ReactMarkdown></h2>
+                <ReactMarkdown>{k.message}</ReactMarkdown>
                </Content>);
         }
         return (
