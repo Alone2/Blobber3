@@ -1,7 +1,3 @@
-import React from 'react';
-import Topbar from './Topbar'
-import News from './News'
-import Normal from './Normal'
 import Cookies from 'js-cookie';
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import LoginScreen from './LoginScreen';
@@ -33,7 +29,7 @@ function App() {
             <Switch>
                 <Route path="/login" exact component={LoginScreen} />
                 <Route path="/register" exact component={LoginScreen} />
-                <Route path="/" component={Normal} />
+                <Route path="/" component={ContentScreen} />
             </Switch>
         </Router>
     </div>

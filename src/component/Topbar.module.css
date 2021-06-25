@@ -26,6 +26,8 @@
 
 .loginbutton {
     margin: 13px 15px;
+    font-size: 13.5px;
+    height:37px;
     background-color: var(--transparent);
     border-color: var(--primary-color);
     color: var(--primary-color);
