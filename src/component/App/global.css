@@ -11,20 +11,21 @@ input[type=text],
 input[type=email],
 input[type=password] {
     font-family: 'Open Sans', sans-serif;
-    font-size: 20px;
+    font-size: 16px;
     width: 260px;
     outline: none;
+    margin-top: 3px;
     /* overflow: auto; */
     resize: none;
     padding: 0px;
     -webkit-appearance: none;
     border: 5px;
     border-style: solid;
-    border-radius: 5px;
+    border-radius: 0px 5px 5px 5px;
     padding: 4px;
     background-color: var(--secondary-contrast);
     color: var(--primary-color);
-    border-color: var(--secondary-contrast)
+    border-color: var(--secondary-contrast);
 }
 
 body {
@@ -37,3 +38,18 @@ body {
     --very-bright: white;
     height: 100%;
 }
+
+#inputdescription {
+    color: var(--secondary-color);
+    background-color: var(--secondary-contrast);
+    border: 2px;
+    border-style: none none solid none;
+    border-color: var(--secondary-background);
+    border-radius: 3px 3px 0px 0px;
+    font-size: 15px;
+    /* padding: 1px 8px 10px 8px; */
+    padding: 1px 8px 1px 8px;
+    /* margin-left: 18px; */
+    /* margin-bottom: 5px; */
+}
+

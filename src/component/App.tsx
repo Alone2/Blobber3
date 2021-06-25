@@ -10,15 +10,19 @@ import ContentScreen from './ContentScreen';
 import './App/global.css'
 
 function App() {
-  var themeany : any = Cookies.get('theme')
   var theme : String;
-  if (themeany === undefined){
-    theme = "dark"
-    Cookies.set("theme", theme)
+  if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+      theme = "dark"
+  } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches) {
+      theme = "light"
   } else {
+      theme = "dark"
+  }
+  var themeany : any = Cookies.get('theme')
+  if (themeany !== undefined){
     theme = themeany
   }
-  if (theme === "white") {
+  if (theme === "light") {
     require("./App/lighttheme.css")
   } else {
     require("./App/darktheme.css")

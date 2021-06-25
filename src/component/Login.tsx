@@ -8,18 +8,20 @@ function Login() {
         <Content>
             <div className={styles.login}>
                 <form action="login" method="post">
+                    <span id="inputdescription">username</span>
                     <input type="text"
-                        placeholder="username" />
+                        placeholder="your username" />
                     <br />
                     <br />
+                    <span id="inputdescription">password</span>
                     <input type="password"
-                        placeholder="password" />
+                        placeholder="yourstrongpassword123" />
                     <br />
                     <br />
-                    <Link className={styles.linkclass} to="/register">
-                    <button className={styles.registerbutton} value="register" >register</button>
-                    </Link>
                     <button className={styles.loginbutton} type="submit" value="login" >login</button>
+                    <Link className={styles.linkclass} to="/register">
+                        <button className={styles.registerbutton} value="register" >register</button>
+                    </Link>
                 </form>
             </div>
         </Content>

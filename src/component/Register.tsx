@@ -7,27 +7,31 @@ function Register() {
     return (
         <Content>
             <div className={styles.login}>
-                <form action="login" method="post">
+                <form action="./register" method="post">
+                    <span id="inputdescription">e-mail</span>
                     <input type="email"
-                        placeholder="email" />
+                        placeholder="mail@example.com" />
                     <br />
                     <br />
+                    <span id="inputdescription">username</span>
                     <input type="text"
-                        placeholder="username" />
+                        placeholder="your-username" />
                     <br />
                     <br />
+                    <span id="inputdescription">password</span>
                     <input type="password"
-                        placeholder="password" />
+                        placeholder="yourstrongpassword123" />
                     <br />
                     <br />
+                    <span id="inputdescription">confirm password</span>
                     <input type="password"
-                        placeholder="confirm password" />
+                        placeholder="yourstrongpassword123" />
                     <br />
                     <br />
+                    <button className={styles.loginbutton} type="submit" value="login" >register</button>
                     <Link className={styles.linkclass} to="/login">
                         <button className={styles.registerbutton} value="register" >login</button>
                     </Link>
-                    <button className={styles.loginbutton} type="submit" value="login" >register</button>
                 </form>
             </div>
         </Content>

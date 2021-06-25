@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap');
+
+.font {
+    float: left;
+    text-align: center;
+    padding: 14px 16px 14px 5px;
+    text-decoration: none;
+    font-size: 30px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: pointer;
+    color: var(--primary-color);
+    font-family: 'Raleway';
+}
+
+.bannerlogo {
+    padding: 6px 0px 0px 7px;
+    float: left;
+    width: 50px;
+}
+
+.holder {
+    height: 63px;
+}

@@ -1,11 +1,21 @@
 .children {
     float: left;
+    margin-left: 200px
 }
 
 .navbar {
-    float: left;
-    width: 20%;
-    max-width: 300px;
-    margin: 0 auto;
+    /* float: left; */
+    /* width: 20%; */
+    /* max-width: 300px; */
+    /* margin: 0 auto; */
+  height: 100%;
+  width: 200px;
+  /* width: 160px; */
+  position: fixed;
+  /* z-index: 1; */
+  top: 0;
+  left: 0;
+  /* overflow-x: hidden; */
+  /* padding-top: 20px; */
 }
 

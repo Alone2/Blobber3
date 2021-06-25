@@ -14,7 +14,10 @@ function ContentScreen(props : Props) {
   return (
     <div>
       <div className={styles.navbar}>
-        <Navbar/>
+        <Route path="/" component={Navbar} />
+        <Route path="/news" component={Navbar} />
+        <Route path="/send" component={Navbar} />
+        <Route path="/unclaimed" component={Navbar} />
       </div>
       <div className={styles.children}>
           {props.children}

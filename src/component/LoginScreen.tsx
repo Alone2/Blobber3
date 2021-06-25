@@ -13,7 +13,7 @@ function LoginScreen() {
             </div>
             <div className={styles.screen}>
                 <div className={styles.banner}>
-                    <Link to="/login">
+                    <Link to="/">
                         <img alt="blobber logo" draggable="false" src={logo} className={styles.bannerlogo} />
                     </Link>
                 </div>
