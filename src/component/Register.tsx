@@ -10,22 +10,22 @@ function Register() {
                 <form action="./register" method="post">
                     <span id="inputdescription">e-mail</span>
                     <input type="email"
-                        placeholder="mail@example.com" />
+                        placeholder="" autoFocus/>
                     <br />
                     <br />
                     <span id="inputdescription">username</span>
                     <input type="text"
-                        placeholder="your-username" />
+                        placeholder="" />
                     <br />
                     <br />
                     <span id="inputdescription">password</span>
                     <input type="password"
-                        placeholder="yourstrongpassword123" />
+                        placeholder="" />
                     <br />
                     <br />
                     <span id="inputdescription">confirm password</span>
                     <input type="password"
-                        placeholder="yourstrongpassword123" />
+                        placeholder="" />
                     <br />
                     <br />
                     <button className={styles.loginbutton} type="submit" value="login" >register</button>

@@ -1,40 +1,36 @@
 import React from 'react';
 import styles from './Navbar.module.css'
 import { Link } from "react-router-dom";
-import { RouteComponentProps } from 'react-router';
+import { useLocation } from 'react-router-dom';
 import LogoBlobber from './LogoBlobber'
 
-interface MatchParams {
-}
-
-interface NavbarProps extends RouteComponentProps<MatchParams> {
+interface NavbarProps {
+    paths: { [path: string]: string }
 }
 
 function Navbar(props : NavbarProps) {  
-  console.log(props.location.pathname);
+  const location = useLocation();
+  const paths : { [key: string]: string } ={
+      "/":"Home", 
+      "/news":"News", 
+      "/send":"Send", 
+      "/unclaimed":"Links"
+  };
+  var allEntries : JSX.Element[] = [];
+  for (var k in props.paths) {
+      allEntries.push(
+         <Link to={k} className={styles.linkstyle}>
+            <p className={location.pathname === k ? styles.buttonactive : styles.button}>
+                {paths[k]}
+            </p>
+         </Link>
+      );
+
+  }
   return (
       <div className={styles.content}>
           <LogoBlobber/>
-          <Link to="./" className={styles.linkstyle}>
-            <p className={props.location.pathname === "/" ? styles.buttonactive : styles.button}>
-              Home
-            </p>
-          </Link>
-          <Link to="./news" className={styles.linkstyle}>
-            <p className={props.location.pathname === "/news" ? styles.buttonactive : styles.button}>
-              News
-            </p>
-          </Link>
-          <Link to="./send" className={styles.linkstyle}>
-            <p className={props.location.pathname === "/send" ? styles.buttonactive : styles.button}>
-              Send money
-            </p>
-          </Link>
-          <Link to="./unclaimed" className={styles.linkstyle}>
-            <p className={props.location.pathname === "/unclaimed" ? styles.buttonactive : styles.button}>
-              My Links
-            </p>
-          </Link>
+          {allEntries}
       </div>
     );
 }

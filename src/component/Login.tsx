@@ -10,12 +10,12 @@ function Login() {
                 <form action="login" method="post">
                     <span id="inputdescription">username</span>
                     <input type="text"
-                        placeholder="your username" />
+                        placeholder="" autoFocus/>
                     <br />
                     <br />
                     <span id="inputdescription">password</span>
                     <input type="password"
-                        placeholder="yourstrongpassword123" />
+                        placeholder="" />
                     <br />
                     <br />
                     <button className={styles.loginbutton} type="submit" value="login" >login</button>
