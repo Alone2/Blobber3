@@ -1,0 +1,52 @@
+.flexbox {
+    overflow: auto;
+    flex: 1;
+    display: flex;
+    min-height: min-content;
+}
+.banner {
+    width: 100%;
+    overflow: auto;
+    display: flex;
+    z-index: 2;
+    position:relative;
+    border-color: var(--primary-background);
+    background-color: var(--secondary-contrast);
+}
+
+.button {
+    font-family: 'Raleway';
+    font-size: 18px;
+    color: var(--primary-color);
+    background-color: var(--secondary-contrast);
+    border-color: var(--secondary-contrast);
+    padding: 15px 16px;
+    border-style:  none none solid none;
+    border-width: 1px;
+    border-radius: 0px 0px 10px 10px;
+    margin: 0px;
+    margin: 0px 0px 2px 0px;
+}
+.button:hover { 
+    animation-name: buttonhoverani;
+    animation-duration: 0.3s;
+    /* color: var(--primary-background); */
+    /* background-color: var(--secondary-contrast); */
+    background-color: var(--secondary-background);
+    border-color: var(--primary-background);
+}
+.buttonactive {
+    font-family: 'Raleway';
+    font-size: 18px;
+    color: var(--primary-color);
+    background-color: var(--secondary-background);
+    border-color: var(--primary-background);
+    padding: 15px 16px;
+    border-style:  none none solid none;
+    border-width: 1px;
+    border-radius: 0px 0px 10px 10px;
+    margin: 0px 0px 2px 0px;
+}
+.linkstyle, .linkstyle:hover, .linkstyle:link, .linkstyle:active {
+    text-decoration: none !important;
+}

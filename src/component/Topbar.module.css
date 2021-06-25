@@ -1,5 +1,5 @@
 .banner {
-    height: 63px;
+    height: 100%;
     z-index: 2;
     position:relative;
     border-width: 1px;
@@ -10,7 +10,7 @@
 }
 
 .bloblogo {
-    position: fixed;
+    position: absolute;
     /* height: 100%; */
     /* width: 100%; */
     z-index: 3;

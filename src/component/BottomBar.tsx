@@ -1,14 +1,14 @@
 import React from 'react';
-import styles from './Navbar.module.css'
+import styles from './BottomBar.module.css';
+import LogoBlobber from './LogoBlobber'
 import { Link } from "react-router-dom";
 import { useLocation } from 'react-router-dom';
-import LogoBlobber from './LogoBlobber'
 
 interface NavbarProps {
     paths: { [path: string]: string }
 }
 
-function Navbar(props : NavbarProps) {  
+function BottomBar(props: NavbarProps) {
   const location = useLocation();
   var allEntries : JSX.Element[] = [];
   for (var k in props.paths) {
@@ -22,10 +22,12 @@ function Navbar(props : NavbarProps) {
 
   }
   return (
-      <div className={styles.content}>
-          <LogoBlobber/>
-          {allEntries}
+      <div className={styles.flexbox}>
+          <div className={styles.banner}>
+              {allEntries}
+          </div>
       </div>
     );
 }
-export default Navbar;
+
+export default BottomBar;

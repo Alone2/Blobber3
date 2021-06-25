@@ -3,6 +3,7 @@ import { Link, BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import styles from './ContentScreen.module.css'
 import Navbar from './Navbar'
 import Topbar from './Topbar'
+import BottomBar from './BottomBar'
 import News from './News'
 
 interface Props {
@@ -10,26 +11,34 @@ interface Props {
 }
 
 function ContentScreen(props : Props) {
+    const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+    const path : { [path: string]: string } = {
+        "/":"Home", 
+        "/news":"News", 
+        "/send":"Send", 
+        "/unclaimed":"Links",
+    };
+
     return (
         <div>
             <div className={styles.banner}>
                 <Topbar/>
             </div>
             <div className={styles.content}>
+                { isMobile ? "" :
                 <div className={styles.navbar}>
-                    <Navbar paths={
-                        {
-                            "/":"Home", 
-                            "/news":"News", 
-                            "/send":"Send", 
-                            "/unclaimed":"Links" 
-                        }
-                    }/>
+                    <Navbar paths={path} />
                 </div>
-                <div className={styles.children}>
+                }
+                <div className={isMobile ? styles.childrenmobile : styles.children}>
                     <Route path="/news" component={News} />
                 </div>
             </div>
+            { isMobile ? 
+            <div className={styles.bottombar}>
+                <BottomBar paths={path} />
+            </div>
+            : ""}
         </div>
     );
 }
