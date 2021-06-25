@@ -15,6 +15,9 @@
 .holder {
     height:100%;
 }
+.logo {
+    height:63px;
+}
 .button {
     font-family: 'Raleway';
     color: var(--primary-color);

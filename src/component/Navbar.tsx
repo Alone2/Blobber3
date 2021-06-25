@@ -13,7 +13,7 @@ function Navbar(props : NavbarProps) {
   var allEntries : JSX.Element[] = [];
   for (var k in props.paths) {
       allEntries.push(
-         <Link to={k} className={styles.linkstyle}>
+         <Link key={k} to={k} className={styles.linkstyle}>
             <p className={location.pathname === k ? styles.buttonactive : styles.button}>
                 {props.paths[k]}
             </p>
@@ -23,7 +23,9 @@ function Navbar(props : NavbarProps) {
   }
   return (
       <div className={styles.content}>
-          <LogoBlobber/>
+          <div className={styles.logo}>
+              <LogoBlobber/>
+          </div>
           {allEntries}
       </div>
     );

@@ -7,12 +7,14 @@ import { Link } from "react-router-dom";
 function Topbar() {
   return (
       <div>
+        <div className={styles.banner}>
           <Link to="./" className={styles.bloblogo}>
               <LogoBlobber />
           </Link>
-        <div className={styles.banner}>
           <Link className={styles.linkclass} to="/login">
-            <button className={styles.loginbutton}>login</button>
+             <div className={styles.middle}>
+                <button className={styles.loginbutton}>login</button>
+            </div>
           </Link>
         </div>
     </div>

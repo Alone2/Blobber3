@@ -21,10 +21,10 @@ function ContentScreen(props : Props) {
 
     return (
         <div>
-            <div className={styles.banner}>
+            <div className={isMobile ? [styles.bannermobile,styles.banner].join(" ") : styles.banner}>
                 <Topbar/>
             </div>
-            <div className={styles.content}>
+            <div className={isMobile ? [styles.contentmobile,styles.content].join(" ") : styles.content}>
                 { isMobile ? "" :
                 <div className={styles.navbar}>
                     <Navbar paths={path} />
