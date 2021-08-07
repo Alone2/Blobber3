@@ -15,6 +15,7 @@ function ContentScreen(props : Props) {
     const path : { [path: string]: string } = {
         "/":"Home", 
         "/news":"News", 
+        "/projects":"Projects", 
         "/send":"Send", 
         "/unclaimed":"Links",
     };
@@ -31,7 +32,9 @@ function ContentScreen(props : Props) {
                 </div>
                 }
                 <div className={isMobile ? styles.childrenmobile : styles.children}>
-                    <Route path="/news" component={News} />
+                    <Route path="/news" render={(props) => (
+                        <News {...props} path="/news.yaml" />
+                    )} />
                 </div>
             </div>
             { isMobile ? 

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import ReactMarkdown from 'react-markdown'
 import Content from './Content';
+import yaml from 'js-yaml'
 import './News.css'
 // function News() {  
 //   React.useEffect(function() {
@@ -18,6 +19,7 @@ import './News.css'
 // }
 
 interface Props {
+    path: string
 }
 
 interface Article {
@@ -26,21 +28,26 @@ interface Article {
     date: string,
     pic: string,
 }
+
 interface State {
     articles: Article[],
 }
+
 export class News extends Component<Props, State> {
     constructor(props : Props) { super(props)
         this.state = {
             articles: [],
         }
     }
+
     componentDidMount() {
         this.getNews()
     }
+
     async getNews() {
-        const data : Response = await fetch("../news.json");
-        const datajson : any = await data.json();
+        const data : Response = await fetch("../news.yaml");
+        const datayaml : string = await data.text();
+        const datajson : any = yaml.load(datayaml);
         var content : Article[] = [];
         for (var k of datajson) {
             /* console.log(k); */
@@ -55,10 +62,8 @@ export class News extends Component<Props, State> {
         this.setState({
             articles: this.state.articles.concat(content)
         })
-        console.log(datajson);
     }
 
-   
     render() {
         let returnMe : JSX.Element[] = [];
         for(var i in this.state.articles) {
@@ -76,7 +81,6 @@ export class News extends Component<Props, State> {
             <div>
                 {returnMe}
             </div>
-            /* {this.displayNews()} */
         );
     }
 }
