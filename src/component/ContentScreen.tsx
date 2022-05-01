@@ -16,8 +16,8 @@ function ContentScreen(props : Props) {
         "/":"Home", 
         "/news":"News", 
         "/projects":"Projects", 
-        "/send":"Send", 
-        "/unclaimed":"Links",
+        // "/send":"Send", 
+        // "/unclaimed":"Links",
     };
 
     return (

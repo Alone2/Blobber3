@@ -34,18 +34,19 @@ interface State {
 }
 
 export class News extends Component<Props, State> {
-    constructor(props : Props) { super(props)
+    constructor(props : Props) { 
+        super(props);
         this.state = {
             articles: [],
         }
     }
 
     componentDidMount() {
-        this.getNews()
+        this.getNews();
     }
 
     async getNews() {
-        const data : Response = await fetch("../news.yaml");
+        const data : Response = await fetch(this.props.path);
         const datayaml : string = await data.text();
         const datajson : any = yaml.load(datayaml);
         var content : Article[] = [];
