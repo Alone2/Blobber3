@@ -1,0 +1,26 @@
+.project {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    background-color: var(--secondary-background);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 200px;
+}
+
+.projectChild {
+    width: 200px;
+    padding: 1em;
+    margin: 1em;
+    border-radius: 1em;
+    border-style: none;
+    background-color: var(--secondary-contrast);
+    border-style: none none solid none;
+    border-color: var(--primary-contrast);
+    color: var(--primary-color);
+    cursor: pointer;
+}
+
+.projectChild img {
+    width: 000px;
+}
