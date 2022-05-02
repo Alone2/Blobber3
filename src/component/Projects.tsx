@@ -50,17 +50,18 @@ export class Projects extends Component<Props, State> {
     }
 
     render() {
+        const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
         let returnMe : JSX.Element[] = [];
         for(var i in this.state.projects) {
             const k = this.state.projects[i];
-            returnMe.push(<div onClick={() => {document.location.href = k.link;}} className={styles.projectChild}>
+            returnMe.push(<div onClick={() => {window.open(k.link, "_blank");}} className={isMobile ? styles.projectChildMobile : styles.projectChild} > 
                 <img src={k.pic} alt="" />
                 <br/>
                 <h2><ReactMarkdown>{k.message}</ReactMarkdown></h2>
                </div>);
         }
         return (
-            <div className={styles.project}>
+            <div className={isMobile ? styles.projectMobile : styles.project} > 
                 {returnMe}
             </div>
         );

@@ -22,7 +22,7 @@ function ContentScreen(props : Props) {
     };
 
     return (
-        <div>
+        <div className={styles.height}>
             <div className={isMobile ? [styles.bannermobile,styles.banner].join(" ") : styles.banner}>
                 <Topbar/>
             </div>

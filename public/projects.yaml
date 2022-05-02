@@ -1,10 +1,10 @@
 ---
 - message: Die Lügenpresse
-  pic: https://die-luegenpresse.ch/img/banner.png
+  pic: /pics/luegenpresse.jpg
   link: https://die-luegenpresse.ch/
-- message: Die Lügenpresse
-  pic: https://die-luegenpresse.ch/img/banner.png
-  link: https://die-luegenpresse.ch/
+- message: Conspiracy Theory Generator
+  pic: /pics/theory.jpg
+  link: https://blobber.ch/conspiracytheoriesgenerator/
 - message: Die Lügenpresse
   pic: https://die-luegenpresse.ch/img/banner.png
   link: https://die-luegenpresse.ch/

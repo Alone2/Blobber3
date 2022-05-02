@@ -1,26 +1,82 @@
 .project {
-    height: 100%;
     width: 100%;
-    position: fixed;
+    height: calc(100vh - var(--banner-height));
+    position: relative;
     background-color: var(--secondary-background);
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-auto-rows: 200px;
+    grid-auto-rows: 17rem;
+}
+
+.projectMobile {
+    height: calc(100vh - var(--banner-height));
+    width: 100%;
+    position: relative;
+    background-color: var(--secondary-background);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 50vw;
 }
 
 .projectChild {
-    width: 200px;
-    padding: 1em;
-    margin: 1em;
-    border-radius: 1em;
+    width: 18vw;
+    max-width: 12rem;
+    height: 18vw;
+    max-height: 12rem;
+    padding: 1vw;
+    margin: 3vw;
+    border-radius: 1vw;
     border-style: none;
     background-color: var(--secondary-contrast);
     border-style: none none solid none;
     border-color: var(--primary-contrast);
     color: var(--primary-color);
     cursor: pointer;
+    text-align: center;
+    font-size: min(1.4vw, 0.8rem);
+}
+
+.projectChildMobile {
+    width: 35vw;
+    height: 35vw;
+    padding: 1vw;
+    margin: 6vw;
+    border-radius: 1vw;
+    border-style: none;
+    background-color: var(--secondary-contrast);
+    border-style: none none solid none;
+    border-color: var(--primary-contrast);
+    color: var(--primary-color);
+    cursor: pointer;
+    text-align: center;
+    font-size: min(2.4vw, 1rem);
+}
+
+.project :hover {
+    transition: background-color var(--primary-background);
+    background-color: var(--primary-background);
+    border-color: var(--secondary-contrast);
+    transition-duration: 200ms;
 }
 
 .projectChild img {
-    width: 000px;
+    margin-top: 1.7vw;
+    width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+}
+
+.projectChild h2, .projectChild p, .projectChildMobile p, .projectChildMobile h2 {
+    margin-top: 0px;
+}
+
+.projectChildMobile img {
+    margin-top: 4vw;
+    width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
 }
