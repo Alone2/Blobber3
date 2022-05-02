@@ -37,6 +37,8 @@ body {
     --very-dark: black;
     --very-bright: white;
     --banner-height: 63px;
+    --banner-height-mobile: 53px;
+    --bottom-bar-height: 54px;
     height: 100%;
 }
 

@@ -9,7 +9,7 @@
 }
 
 .projectMobile {
-    height: calc(100vh - var(--banner-height));
+    height: calc(100vh - var(--banner-height-mobile) - var(--bottom-bar-height));
     width: 100%;
     position: relative;
     background-color: var(--secondary-background);
