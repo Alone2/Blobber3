@@ -5,6 +5,7 @@ import Navbar from './Navbar'
 import Topbar from './Topbar'
 import BottomBar from './BottomBar'
 import News from './News'
+import Home from './Home'
 import Projects from './Projects'
 
 interface Props {
@@ -38,6 +39,9 @@ function ContentScreen(props : Props) {
                     )} />
                     <Route path="/projects" render={(props) => (
                         <Projects {...props} path="/projects.yaml" />
+                    )} />
+                    <Route exact path="/" render={(props) => (
+                        <Home {...props} pathNews="/news.yaml" pathProjects="/projects.yaml" />
                     )} />
                 </div>
             </div>

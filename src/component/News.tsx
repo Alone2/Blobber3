@@ -2,21 +2,7 @@ import React, { Component } from 'react';
 import ReactMarkdown from 'react-markdown'
 import Content from './Content';
 import yaml from 'js-yaml'
-import './News.css'
-// function News() {  
-//   React.useEffect(function() {
-//     getNews()
-//   }, [])
-//   async function getNews() {
-//     const data : Response = await fetch("https://blobber.ch/content/news")
-//     const datajson : any = data.json()
-//     console.log(datajson)
-//   }
-//   return (
-//       <Content>
-//       </Content>
-//   );
-// }
+import styles from './News.module.css'
 
 interface Props {
     path: string
@@ -76,10 +62,10 @@ export class News extends Component<Props, State> {
                 <br/>
                 <h2><ReactMarkdown>{k.header}</ReactMarkdown></h2>
                 <ReactMarkdown>{k.message}</ReactMarkdown>
-               </Content>);
+             </Content>);
         }
         return (
-            <div>
+            <div className={styles.articles}>
                 {returnMe}
             </div>
         );
