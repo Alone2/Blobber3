@@ -11,11 +11,6 @@ const DarkTheme = React.lazy(() => import('./App/DarkTheme'));
 
 function App() {
   var theme = getTheme();
-  if (theme === "light") {
-    require("./App/lighttheme.css")
-  } else {
-    require("./App/darktheme.css")
-  }
   return (
     <div className="App">
         <React.Suspense fallback={<></>}>
